@@ -1,10 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AK EXECUTOR - Advanced Roblox Executor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to My Site!</h1>
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="floating-particles"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">🎮</div>
+        <span>AK EXECUTOR</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#download" class="nav-link">Download</a>
+        <a href="#support" class="nav-link">Support</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-text">🚀 Version 2.0 Available Now</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="title-gradient">AK EXECUTOR</span>
+        <span class="title-subtitle">The Ultimate Roblox Experience</span>
+      </h1>
+      
+      <p class="hero-description">
+        Experience unparalleled performance with our advanced Roblox executor. 
+        Featuring cutting-edge technology, seamless integration, and premium security.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-count="50000">0</span>
+          <span class="stat-label">Active Users</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="99">0</span>
+          <span class="stat-label">% Uptime</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="24">0</span>
+          <span class="stat-label">Hour Support</span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="https://mega.nz/file/Gpx1TbqA#_KSTdFBSIULSPUQi9yrJkSswzDa8uI-kPXEoPTO0-sg" class="btn btn-primary" target="_blank" rel="noopener">
+          <span class="btn-icon">📥</span>
+          Download Now
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="https://discord.gg/D4KHcSxw" class="btn btn-secondary" target="_blank" rel="noopener">
+          <span class="btn-icon">💬</span>
+          Join Community
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="executor-preview">
+        <div class="preview-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <span class="window-title">AK Executor v2.0</span>
+          </div>
+          <div class="window-content">
+            <div class="executor-interface">
+              <div class="interface-header">
+                <div class="interface-tabs">
+                  <div class="tab active">Script Editor</div>
+                  <div class="tab">Console</div>
+                  <div class="tab">Settings</div>
+                </div>
+              </div>
+              <div class="code-editor">
+                <div class="line-numbers">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+                <div class="code-content">
+                  <div class="code-line">
+                    <span class="code-comment">-- AK Executor Ready</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="code-keyword">print</span><span class="code-bracket">(</span><span class="code-string">"Hello World!"</span><span class="code-bracket">)</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="code-keyword">game</span><span class="code-operator">:</span><span class="code-method">GetService</span><span class="code-bracket">(</span><span class="code-string">"Players"</span><span class="code-bracket">)</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="code-keyword">local</span> <span class="code-variable">player</span> <span class="code-operator">=</span> <span class="code-keyword">game</span><span class="code-operator">.</span><span class="code-property">Players</span><span class="code-operator">.</span><span class="code-property">LocalPlayer</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="code-comment">-- Your script here...</span>
+                  </div>
+                </div>
+              </div>
+              <div class="interface-footer">
+                <button class="execute-btn">▶ Execute</button>
+                <button class="clear-btn">🗑 Clear</button>
+                <div class="status">Ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powerful Features</h2>
+        <p class="section-description">Everything you need for the ultimate Roblox experience</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Lightning Fast</h3>
+          <p class="feature-description">Optimized performance with minimal resource usage</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Secure & Safe</h3>
+          <p class="feature-description">Advanced security measures to protect your account</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Precise Control</h3>
+          <p class="feature-description">Fine-tuned controls for maximum precision</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Auto Updates</h3>
+          <p class="feature-description">Always stay up-to-date with the latest features</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Universal Support</h3>
+          <p class="feature-description">Compatible with all Roblox games and versions</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💎</div>
+          <h3 class="feature-title">Premium Quality</h3>
+          <p class="feature-description">Professional-grade tools for serious users</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="download">
+    <div class="container">
+      <div class="download-content">
+        <div class="download-info">
+          <h2 class="download-title">Ready to Get Started?</h2>
+          <p class="download-description">
+            Join thousands of users who trust AK Executor for their Roblox experience. 
+            Download now and unlock unlimited possibilities.
+          </p>
+          
+          <div class="download-features">
+            <div class="download-feature">
+              <span class="feature-check">✓</span>
+              <span>Instant download & setup</span>
+            </div>
+            <div class="download-feature">
+              <span class="feature-check">✓</span>
+              <span>24/7 customer support</span>
+            </div>
+            <div class="download-feature">
+              <span class="feature-check">✓</span>
+              <span>Regular updates included</span>
+            </div>
+          </div>
+          
+          <div class="download-buttons">
+            <a href="https://mega.nz/file/Gpx1TbqA#_KSTdFBSIULSPUQi9yrJkSswzDa8uI-kPXEoPTO0-sg" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+              <span class="btn-icon">📥</span>
+              Download AK Executor
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="https://rdd.latte.to/?channel=RobloxPlayer&binaryType=WindowsPlayer&version=version-e1da58b32b1c4d64&compressZip=true&compressionLevel=5" class="btn btn-outline" target="_blank" rel="noopener">
+              <span class="btn-icon">🔻</span>
+              Downgrade Roblox
+            </a>
+          </div>
+        </div>
+        
+        <div class="download-visual">
+          <div class="download-card">
+            <div class="card-header">
+              <div class="card-icon">📦</div>
+              <div class="card-info">
+                <h3>AK Executor v2.0</h3>
+                <p>Latest Version</p>
+              </div>
+            </div>
+            <div class="card-stats">
+              <div class="stat">
+                <span class="stat-label">Size</span>
+                <span class="stat-value">2.4 MB</span>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Downloads</span>
+                <span class="stat-value">50K+</span>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rating</span>
+                <span class="stat-value">⭐ 4.9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Section -->
+  <section id="support" class="support">
+    <div class="container">
+      <div class="support-content">
+        <h2 class="support-title">Need Help?</h2>
+        <p class="support-description">Our community is here to help you get the most out of AK Executor</p>
+        
+        <div class="support-options">
+          <a href="https://discord.gg/D4KHcSxw" class="support-card" target="_blank" rel="noopener">
+            <div class="support-icon">💬</div>
+            <h3>Discord Community</h3>
+            <p>Join our active Discord server for real-time support and updates</p>
+            <span class="support-arrow">→</span>
+          </a>
+          
+          <div class="support-card">
+            <div class="support-icon">📚</div>
+            <h3>Documentation</h3>
+            <p>Comprehensive guides and tutorials to help you get started</p>
+            <span class="support-arrow">→</span>
+          </div>
+          
+          <div class="support-card">
+            <div class="support-icon">🎥</div>
+            <h3>Video Tutorials</h3>
+            <p>Step-by-step video guides for all features and functions</p>
+            <span class="support-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-icon">🎮</div>
+          <span>AK EXECUTOR</span>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AK Executor. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
